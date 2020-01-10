@@ -1,0 +1,41 @@
+{
+  "name": "react-check",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tart": "webpack-dev-server --mode development --open --hot",
+    "priorstart": "webpack-dev-server --mode development --port 4000 --compress --open",
+    "start": "node dist/main.js",
+    "dev": "rm -rf dist public && webpack --mode development --progress",
+    "build": "rm -rf dist public && webpack --mode production --progress",
+    "stats": "webpack --profile --json > stats.json && webpack-bundle analyzer stats.json dist"
+  },
+  "author": "JATIN N JOGI",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "axios": "^0.19.0",
+    "core-js": "^2.6.10",
+    "express": "^4.17.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^4.0.0-beta.8",
+    "nodemon": "^1.19.4",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
